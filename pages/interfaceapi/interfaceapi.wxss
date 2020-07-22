@@ -1,0 +1,16 @@
+/* pages/interfaceapi/interfaceapi.wxss */
+.animation-view {
+	width: 220rpx;
+	height: 220rpx;
+	background-color: lightgreen;
+	margin: 20rpx auto;
+	line-height: 220rpx;
+}
+
+.test {
+	height: 1200rpx;
+	background-color: lightyellow;
+}
+canvas {
+	height: 600rpx;
+}

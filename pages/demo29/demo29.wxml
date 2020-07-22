@@ -1,0 +1,9 @@
+<view class="demo-box">
+	<view class="title">使用数组批量生成选项</view>
+	<checkbox-group bindchange="checkboxChange">
+		<view wx:for='{{checkboxItems}}' wx:key="index">
+			<checkbox value="{{item.value}}" checked="{{item.checked}}">{{item.name}}</checkbox>
+		</view>
+	</checkbox-group>
+	<view>{{checkList}}</view>
+</view>

@@ -1,0 +1,16 @@
+<view class="demo-box">
+	<view class="title">显示百分比</view>
+	<progress percent='25' show-info></progress>
+</view>
+<view class="demo-box">
+	<view class="title">20px进度条</view>
+	<progress percent='50' stroke-width='20'></progress>
+</view>
+<view class="demo-box">
+	<view class="title">自定义颜色进度条</view>
+	<progress percent='80' activeColor='red'></progress>
+</view>
+<view class="demo-box">
+	<view class="title">动画进度条</view>
+	<progress percent='100' active></progress>
+</view>

@@ -1,0 +1,25 @@
+<view class="title">网络请求</view>
+<view class="demo-box">
+	<view class="title">wx.request(obj)</view>
+	<input placeholder="请输入你要查询的单词" bindblur='wordBlur' />
+	<button type="primary" bindtap='search'>查询</button>
+	<view class="status">释义：{{result}}</view>
+</view>
+<view style="border: 1px solid;">
+	<view class="title">文件上传/下载</view>
+	<view class="demo-box">
+		<view class="title">wx.uploadFile(obj)</view>
+		<image wx:if='{{src}}' src="{{src}}" mode="widthFix"></image>
+		<button bindtap='chooseImage'>选择文件</button>
+		<button type="primary" bindtap='uploadFile'>开始上传</button>
+	</view>
+
+	<view class="demo-box">
+		<view class="title">wx.downFile(obj)</view>
+		<block wx:if='{{isDownload}}'>
+			<image mode="widthFix" src="{{downLoadSrc}}"></image>
+			<button bindtap='reset'>重置</button>
+		</block>
+		<button wx:else type="primary" bindtap='download'>单击此处下载图片</button>
+	</view>
+</view>

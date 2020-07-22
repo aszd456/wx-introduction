@@ -1,0 +1,80 @@
+<view class="demo-box">
+	<view class="title">获取系统信息</view>
+	<button type="primary" size="mini" bindtap='getSysInfo'>异步查询</button>
+	<button type="primary" size="mini" bindtap='getSysInfoSync'>同步查询</button>
+	<button type="primary" size="mini" bindtap='reset'>清空结果</button>
+	<view class="title">手机品牌：{{res.brand}}</view>
+	<view class="title">手机型号：{{res.model}}</view>
+	<view class="title">操作系统：{{res.system}}</view>
+	<view class="title">客户端平台：{{res.platform}}</view>
+</view>
+<view class="demo-box">
+	<view class="title">canIUse判断</view>
+	<input bindblur='inputBlur' placeholder="请输入需要判断的内容" />
+	<button type="primary" bindtap='canIUse'>查询</button>
+	<view class="title">查询结果：{{result}}</view>
+</view>
+<view class="demo-box">
+	<view class="title">获取网络信息</view>
+	<view class="status">当前网络状态：{{status}}</view>
+</view>
+<view class="demo-box">
+	<view class="title">wifi的简单应用</view>
+	<button type="primary" bindtap='getWifiInfo'>获取wifi状态</button>
+	<!-- <view class="status2">{{error}}</view> -->
+	<view class="status2">SSID:{{wifi.SSID}}</view>
+	<view class="status2">BSSID:{{wifi.BSSID}}</view>
+	<view class="status2">安全性：{{wifi.secure}}</view>
+	<view class="status2">信号强度：{{wifi.signalStrength}}</view>
+</view>
+<view class="demo-box">
+	<view class="title">获取罗盘信息</view>
+	<view class="status">当前方向是：{{degree}}</view>
+</view>
+<view class="demo-box">
+	<view class="title">获取加速度信息</view>
+	<view class="status">X：{{acceleration.x}}</view>
+	<view class="status">Y：{{acceleration.y}}</view>
+	<view class="status">Z：{{acceleration.z}}</view>
+</view>
+<view class="demo-box">
+	<view class="title">扫码</view>
+	<button type="primary" bindtap='scanCode'>开始扫码</button>
+	<view class="status2">字符集：{{scanCode.charSet}}</view>
+	<view class="status2">扫码类型：{{scanCode.scanType}}</view>
+	<view class="status2">扫码结果：{{scanCode.result}}</view>
+</view>
+<view class="demo-box">
+	<view class="title">剪贴板</view>
+	<view class="title">{{code}}</view>
+	<button type="primary" bindtap='setClipboard'>点击此处复制上面序列号</button>
+	<button bindtap='getClipboard'>获取剪贴板内容</button>
+</view>
+<view class="demo-box">
+	<view class="title">通信</view>
+	<input bindblur='nameBlur' placeholder="请输入联系人姓名" />
+	<input bindblur='phoneBlur' placeholder="请输入联系人电话" />
+	<button type="primary" bindtap='makeCall'>拨打电话</button>
+	<button type="default" bindtap='addPerson'>添加联系人</button>
+</view>
+<view class="demo-box">
+	<view class="title">设置屏幕亮度</view>
+	<slider min="0" max="1" value="0.5" step="0.1" show-value="{{true}}" bindchange='sliderChange'></slider>
+</view>
+<view class="demo-box">
+	<view class="title">查询屏幕亮度</view>
+	<button type="primary" bindtap='getBrightness'>查询亮度</button>
+	<view class="title">当前亮度：{{brightness}}</view>
+</view>
+<view class="demo-box">
+	<view class="title">保持屏幕常亮</view>
+	<switch bindchange='switchChange'></switch>
+</view>
+<view class="demo-box">
+	<view class="title">长时间振动（400ms）</view>
+	<button type="primary" bindtap='vibrateLong'>开始振动</button>
+</view>
+<view class="demo-box">
+	<view class="title">短时间振动（15ms）</view>
+	<button type="primary" bindtap='vibrateShort'>开始振动</button>
+</view>

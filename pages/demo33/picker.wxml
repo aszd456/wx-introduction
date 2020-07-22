@@ -1,0 +1,45 @@
+<view class="demo-box">
+	<view class="title">普通选择器</view>
+	<picker mode="selector" range="{{selectorItems}}" bindchange="selectorChange">
+		<view>当前选择：{{selector}}</view>
+	</picker>
+</view>
+<view class="demo-box">
+	<view class="title">多列选择器</view>
+	<picker mode="multiSelector" range="{{multiSelectorItems}}" bindchange="multiSelectorChange">
+		<view>当前选择：{{multiSelector}}</view>
+	</picker>
+</view>
+<view class="demo-box">
+	<view class="title">时间选择器</view>
+	<picker mode="time" bindchange="timeChange">
+		<view>当前选择：{{time}}</view>
+	</picker>
+</view>
+<view class="demo-box">
+	<view class="title">日期选择器</view>
+	<picker mode="date"  bindchange="dateChange">
+		<view>当前选择：{{date}}</view>
+	</picker>
+</view>
+<view class="demo-box">
+	<view class="title">省市区选择器</view>
+	<picker mode="region"  bindchange="regionChange">
+		<view>当前选择：{{region}}</view>
+	</picker>
+</view>
+<view class="demo-box">
+	<view class="title">今日菜单</view>
+	<view class="title">{{menu}}</view>
+	<picker-view value='{{value}}' indicator-style="height:50px;" bindchange='pickerviewChange'>
+		<picker-view-column>
+			<view class="col" wx:for='{{soup}}' wx:key='*this'>{{item}}</view>
+		</picker-view-column>
+		<picker-view-column>
+			<view class="col" wx:for='{{maincourse}}' wx:key='index'>{{item}}</view>
+		</picker-view-column>
+		<picker-view-column>
+			<view class="col" wx:for='{{dessert}}' wx:key='index'>{{item}}</view>
+		</picker-view-column>
+	</picker-view>
+</view>

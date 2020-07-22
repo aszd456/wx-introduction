@@ -1,0 +1,20 @@
+<view class="demo-box">
+	<view class="title">密码输入框</view>
+	<input password placeholder="请输入密码" />
+</view>
+<view class="demo-box">
+	<view class="title">最大字符长度10</view>
+	<input maxlength="10" placeholder="最多输入10个" />
+</view>
+<view class="demo-box">
+	<view class="title">禁用输入框</view>
+	<input disabled placeholder="已禁用" />
+</view>
+<view class="demo-box">
+	<view class="title">自定义placeholder样式</view>
+	<input placeholder-style="color:red;font-weight:bold" placeholder="自定义样式" />
+</view>
+<view class="demo-box">
+	<view class="title">事件监听</view>
+	<input bindinput="getInput" bindblur="getBlur" placeholder="监听" />
+</view>

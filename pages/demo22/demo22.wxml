@@ -1,0 +1,18 @@
+<view class="demo-box">可移动的视图容器，在页面中可以拖拽滑动
+	<view class="title">movable-view在movable-area内</view>
+	<movable-area>
+		<movable-view id="mv01" direction="all"></movable-view>
+	</movable-area>
+</view>
+<view class="demo-box">
+	<view class="title">movable-view超出movable-area</view>
+	<movable-area>
+		<movable-view id="mv02" direction="all"></movable-view>
+	</movable-area>
+</view>
+<view class="demo-box">
+	<view class="title">可缩放的movable-area内</view>
+	<movable-area scale-area>
+		<movable-view id="mv03" direction="all" scale></movable-view>
+	</movable-area>
+</view>

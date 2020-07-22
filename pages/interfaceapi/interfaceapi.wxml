@@ -1,0 +1,184 @@
+<view class="demo-box">
+	<view class="title">显示消失提示框</view>
+	<button type="primary" bindtap='showToast'>显示Toast</button>
+</view>
+<view class="demo-box">
+	<view class="title">关闭消失提示框</view>
+	<button type="primary" bindtap='hideToast'>关闭Toast</button>
+</view>
+<view class="demo-box">
+	<view class="title">显示加载提示框</view>
+	<button type="primary" bindtap='showLoading'>显示Loading</button>
+</view>
+<view class="demo-box">
+	<view class="title">关闭加载提示框</view>
+	<button type="primary" bindtap='hideLoading'>关闭Loading</button>
+</view>
+<view class="demo-box">
+	<view class="title">有取消按钮的模态弹窗</view>
+	<button type="primary" bindtap='showModal'>显示Modal</button>
+</view>
+<view class="demo-box">
+	<view class="title">无取消按钮的模态弹窗</view>
+	<button type="primary" bindtap='showModal2'>显示Modal</button>
+</view>
+<view class="demo-box">
+	<view class="title">显示操作菜单</view>
+	<button type="primary" bindtap='showActionSheet'>显示ActionSheet</button>
+</view>
+<view class="demo-box">
+	<view class="title">设置导航条标题</view>
+	<input type="text" placeholder="请输入自定义的导航条标题" bindinput='titleInput' />
+	<button type="primary" bindtap='setTitle'>设置标题</button>
+</view>
+<view class="demo-box">
+	<view class="title">显示导航条加载动画</view>
+	<button type="primary" bindtap='showAnimation'>显示加载动画</button>
+</view>
+<view class="demo-box">
+	<view class="title">关闭导航条加载动画</view>
+	<button type="primary" bindtap='hideAnimation'>关闭加载动画</button>
+</view>
+<view class="demo-box">
+	<view class="title">设置导航条颜色</view>
+	<button type="primary" bindtap='setColor'>设置颜色</button>
+</view>
+<view class="demo-box">
+	<view class="title">右上角文本设置</view>
+	<button type="primary" size="mini" bindtap='setText'>添加文本</button>
+	<button type="primary" size="mini" bindtap='removeText'>取消文本</button>
+</view>
+<view class="demo-box">
+	<view class="title">右上角红点设置</view>
+	<button type="primary" size="mini" bindtap='showRedDot'>添加红点</button>
+	<button type="primary" size="mini" bindtap='hideRedDot'>取消红点</button>
+</view>
+<view class="demo-box">
+	<view class="title">样式设置</view>
+	<button type="primary" size="mini" bindtap='setBarStyle'>整体设置</button>
+	<button type="primary" size="mini" bindtap='setBarColor'>单项设置</button>
+	<button type="primary" size="mini" bindtap='resetTabBar'>还原设置</button>
+</view>
+<view class="demo-box">
+	<view class="title">tabBar显示与隐藏</view>
+	<button type="primary" size="mini" bindtap='showTabBar'>显示tabBar</button>
+	<button type="primary" size="mini" bindtap='hideTabBar'>隐藏tabBar</button>
+</view>
+<view class="demo-box">
+	<view class="title">wx.navigateTo</view>
+	<button type="primary" size="mini" bindtap='navigateTo'>跳转新页面</button>
+</view>
+<view class="demo-box">
+	<view class="title">wx.redirectTo</view>
+	<button type="primary" size="mini" bindtap='redirectTo'>当前页面重定向</button>
+</view>
+<view class="demo-box">
+	<view class="title">wx.reLaunch</view>
+	<button type="primary" size="mini" bindtap='reLaunch'>重启页面</button>
+</view>
+<view class="demo-box">
+	<view class="title">wx.switchTab</view>
+	<button type="primary" size="mini" bindtap='switchTab'>切换到tabBar页面</button>
+</view>
+<view class="demo-box">
+	<view class="title">animation的用法</view>
+	<view class="animation-view" animation='{{animation}}'>这是动画组件</view>
+	<button type="primary" size="mini" bindtap='rotate'>旋转</button>
+	<button type="primary" size="mini" bindtap='scale'>缩放</button>
+	<button type="primary" size="mini" bindtap='translate'>偏移</button>
+	<button type="primary" size="mini" bindtap='skew'>倾斜</button>
+	<button bindtap='sync'>同时动画</button>
+	<button bindtap='queue'>依次动画</button>
+	<button bindtap='resetAni'>还原</button>
+</view>
+<view class="demo-box">
+	<view class="title">wx.pageScrollTo(obj)</view>
+	<view class="test">这是一个高度超过手机屏幕的组件</view>
+	<button type="primary" bindtap='backToTop'>回到顶部</button>
+</view>
+<view class="demo-box">
+	<view class="title">绘制矩形</view>
+	<canvas canvas-id="myCanvas1" style="border: 1rpx solid;"></canvas>
+	<button type="primary" size="mini" bindtap='fillRect'>填充矩形</button>
+	<button type="primary" size="mini" bindtap='strokeRect'>描边矩形</button>
+	<button type="primary" size="mini" bindtap='clearRect'>清空画布</button>
+</view>
+<view class="demo-box">
+	<view class="title">绘制线段</view>
+	<canvas canvas-id="myCanvas2" style="border: 1rpx solid;"></canvas>
+	<button type="primary" size="mini" bindtap='strokePath'>描边路径</button>
+	<button type="primary" size="mini" bindtap='fillPath'>填充路径</button>
+</view>
+<view class="demo-box">
+	<view class="title">绘制圆弧</view>
+	<canvas canvas-id="myCanvas3" style="border: 1rpx solid;"></canvas>
+</view>
+<view class="demo-box">
+	<view class="title">使用三次贝塞尔曲线绘制爱心</view>
+	<canvas canvas-id="myCanvas4" style="border: 1rpx solid;"></canvas>
+</view>
+<view class="demo-box">
+	<view class="title">绘制文本</view>
+	<canvas canvas-id="myCanvas5" style="border: 1rpx solid;"></canvas>
+</view>
+<view class="demo-box">
+	<view class="title">绘制图片</view>
+	<canvas canvas-id="myCanvas6" style="border: 1rpx solid;"></canvas>
+	<button type="primary" size="mini" bindtap='drawImage01'>绘制原图</button>
+	<button type="primary" size="mini" bindtap='drawImage02'>缩放图片</button>
+	<button type="primary" size="mini" bindtap='drawImage03'>图片切割</button>
+</view>
+<view class="demo-box">
+	<view class="title">颜色透明度</view>
+	<canvas canvas-id="myCanvas7" style="border: 1rpx solid;"></canvas>
+	<button type="primary" size="mini" bindtap='setAlpha01'>不透明</button>
+	<button type="primary" size="mini" bindtap='setAlpha02'>半透明</button>
+	<button type="primary" size="mini" bindtap='setAlpha03'>全透明</button>
+</view>
+<view class="demo-box">
+	<view class="title">线条样式</view>
+	<canvas canvas-id="myCanvas8" style="border: 1rpx solid;"></canvas>
+	<button type="primary" size="mini" bindtap='setLineWidth'>线条加粗</button>
+	<button type="primary" size="mini" bindtap='setLineJoin'>圆形交点</button>
+	<button type="primary" size="mini" bindtap='setLineDash'>虚线效果</button>
+	<button bindtap='resetLine'>还原</button>
+</view>
+<view class="demo-box">
+	<view class="title">渐变样式</view>
+	<canvas canvas-id="myCanvas9" style="border: 1rpx solid;"></canvas>
+	<button type="primary" size="mini" bindtap='linear'>线性渐变</button>
+	<button type="primary" size="mini" bindtap='circular'>圆形渐变</button>
+</view>
+<view class="demo-box">
+	<view class="title">阴影样式</view>
+	<canvas canvas-id="myCanvas10" style="border: 1rpx solid;"></canvas>
+</view>
+<view class="demo-box">
+	<view class="title">绘制图案</view>
+	<canvas canvas-id="myCanvas11" style="border: 1rpx solid;"></canvas>
+</view>
+<view class="demo-box">
+	<view class="title">图像变形</view>
+	<canvas canvas-id="myCanvas12" style="border: 1rpx solid;"></canvas>
+	<button type="primary" size="mini" bindtap='translateImg'>移动</button>
+	<button type="primary" size="mini" bindtap='rotateImg'>旋转</button>
+	<button type="primary" size="mini" bindtap='scaleImg'>缩放</button>
+	<button type="primary" size="mini" bindtap='transformImg'>矩阵变形</button>
+	<button bindtap='drawBoxImg'>还原</button>
+</view>
+<view class="demo-box">
+	<view class="title">图像剪裁</view>
+	<canvas canvas-id="myCanvas13" style="border: 1rpx solid;"></canvas>
+	<button type="primary" bindtap='clip'>剪裁</button>
+	<button type="primary" bindtap='drawImg'>还原</button>
+</view>
+<view class="demo-box">
+	<view class="title">绘制线段</view>
+	<canvas canvas-id="myCanvas14" style="border: 1rpx solid;"></canvas>
+	<button type="primary" bindtap='previewImage'>预览图片</button>
+</view>
+<view class="demo-box">
+	<view class="title">模拟下拉刷新</view>
+	<button type="primary" bindtap='startPullDown'>开始下拉</button>
+	<button type="primary" bindtap='stopPullDown'>停止下拉</button>
+</view>

@@ -1,0 +1,20 @@
+<view class="title">1.视图容器view的简单应用</view>
+<view class="demo-box">
+	<view class="title">(1)不阻止父容器的view_hover</view>
+	<view class="view_parent" hover-class="view_hover">
+		我是父容器view
+		<view class="view_son" hover-class="view_hover">
+			我是子容器view
+		</view>
+	</view>
+</view>
+<view class="demo-box">
+	<view class="title">(2)阻止父容器的view_hover</view>
+	<view class="view_parent" hover-class="view_hover">
+		我是父容器view
+		<view class="view_son" hover-class="view_hover" hover-stop-propagation>
+			我是子容器view
+		</view>
+	</view>
+</view>
+

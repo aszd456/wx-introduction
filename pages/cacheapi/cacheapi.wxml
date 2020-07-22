@@ -1,0 +1,6 @@
+<view class="demo-box">
+	<view class="title">wx.setStorage(obj)异步存储</view>
+	<input name='key' placeholder="请输入key" bindinput='keyInput' />
+	<input name='data' placeholder="请输入data值" bindinput='dataInput' />
+	<button type="primary" bindtap='setStorage'>存储</button>
+</view>

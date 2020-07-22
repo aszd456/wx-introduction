@@ -1,0 +1,38 @@
+<view class="demo-box">
+	<view class="title">下载文件</view>
+	<button type="primary" bindtap='downloadFile'>下载文件</button>
+	<image wx:if='{{tempFilePath}}' src="{{tempFilePath}}" mode="widthFix"></image>
+	<view class="title">{{tip1}}</view>
+</view>
+<view class="demo-box">
+	<view class="title">保存文件</view>
+	<button type="primary" bindtap='saveFile'>保存文件</button>
+</view>
+<view class="demo-box">
+	<view class="title">获取临时文件信息</view>
+	<button type="primary" bindtap='getFileInfo'>获取文件信息</button>
+	<view class="title">{{tip2}}</view>
+</view>
+<view class="demo-box">
+	<view class="title">获取本地文件列表</view>
+	<button type="primary" bindtap='getSavedFileList'>获取文件列表</button>
+	<view class="title">{{tip3}}</view>
+</view>
+<view class="demo-box">
+	<view class="title">获取本地文件信息</view>
+	<button type="primary" bindtap='getSavedFileInfo'>获取本地文件信息</button>
+	<view class="title">{{tip4}}</view>
+</view>
+<view class="demo-box">
+	<view class="title">删除文件</view>
+	<button type="primary" bindtap='removeFile'>删除文件</button>
+	<view class="title">{{tip5}}</view>
+</view>
+<view class="demo-box">
+	<view class="title">下载文件pdf</view>
+	<button type="primary" bindtap='downloadPdf'>下载pdf</button>
+</view>
+<view class="demo-box">
+	<view class="title">打开文件</view>
+	<button type="primary" bindtap='openDocument'>打开文件</button>
+</view>

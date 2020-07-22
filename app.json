@@ -1,0 +1,103 @@
+{
+	"pages": [
+		"pages/index/index",
+		"pages/detail/detail",
+		"pages/menu/menu",
+		"pages/interfaceapi/interfaceapi",
+		"pages/equipmentapi/equipmentapi",
+		"pages/positionapi/positionapi",
+		"pages/cacheapi/cacheapi",
+		"pages/fileapi/fileapi",
+		"pages/mediaapi/mediaapi",
+		"pages/baseapi/baseapi",
+		"pages/demo43/canvas",
+		"pages/demo42/map",
+		"pages/demo41/camera",
+		"pages/demo40/video",
+		"pages/demo39/image",
+		"pages/demo38/audio",
+		"pages/demo37/navigator",
+		"pages/demo36/switch",
+		"pages/demo35/slider",
+		"pages/demo34/radio",
+		"pages/demo33/picker",
+		"pages/demo32/form",
+		"pages/demo31/label",
+		"pages/demo30/input",
+		"pages/demo29/demo29",
+		"pages/demo28/demo28",
+		"pages/demo27/demo27",
+		"pages/demo26/demo26",
+		"pages/demo25/demo25",
+		"pages/demo24/demo24",
+		"pages/demo23/demo23",
+		"pages/demo22/demo22",
+		"pages/demo21/demo21",
+		"pages/demo20/demo20",
+		"pages/demo19/demo19",
+		"pages/demo17/demo17",
+		"pages/demo18/demo18",
+		"pages/demo16/demo16",
+		"pages/demo15/demo15",
+		"pages/demo14/demo14",
+		"pages/demo13/demo13",
+		"pages/demo12/demo12",
+		"pages/demo11/demo11",
+		"pages/demo10/demo10",
+		"pages/demo09/demo09",
+		"pages/demo08/demo08",
+		"pages/demo06/demo06",
+		"pages/demo05/demo05",
+		"pages/demo04/demo04",
+		"pages/demo03/demo03",
+		"pages/demo02/demo02",
+		"pages/demo01/demo01",
+		"pages/demo07/demo07",
+		"pages/my/my",
+		"pages/redirect/redirect",
+		"pages/navigate/navigate",
+		"pages/logs/logs"
+	],
+	"requiredBackgroundModes": ["audio", "location"],
+	"window": {
+		"backgroundTextStyle": "dark",
+		"navigationBarBackgroundColor": "#0094ff",
+		"navigationBarTitleText": "我的应用",
+		"navigationBarTextStyle": "black",
+		"enablePullDownRefresh": true
+	},
+	"tabBar": {
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "icon/_home.png",
+				"selectedIconPath": "icon/home.png"
+			},
+			{
+				"pagePath": "pages/menu/menu",
+				"text": "目录",
+				"iconPath": "icon/_search.png",
+				"selectedIconPath": "icon/search.png"
+			}
+			,
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "icon/_my.png",
+				"selectedIconPath": "icon/my.png"
+			}
+			
+		],
+		"color": "#000000",
+		"selectedColor": "#ff0000",
+		"backgroundColor": "#aaffff",
+		"position": "bottom"
+	},
+	"sitemapLocation": "sitemap.json",
+	"permission":{
+		"scope.userLocation":{
+			"desc":"你的位置信息授权"
+		}
+	}
+}

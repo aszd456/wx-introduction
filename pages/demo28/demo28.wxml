@@ -1,0 +1,16 @@
+<view class="demo-box">
+	<view class="title">迷你按钮</view>
+	<button type="primary" size="mini">主要按钮</button>
+	<button type="default" size="mini">默认按钮</button>
+	<button type="warn" size="mini">警告按钮</button>
+</view>
+<view class="demo-box">
+	<view class="title">按钮状态</view>
+	<button>普通按钮</button>
+	<button disabled="true">禁用按钮</button>
+	<button loading="true">加载按钮</button>
+</view>
+<view class="demo-box">
+	<view class="title">按钮单击监听</view>
+	<button type="primary" open-type="getUserInfo" bindgetuserinfo="getUserDetail">点我试试</button>
+</view>

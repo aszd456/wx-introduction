@@ -1,0 +1,8 @@
+<view class="demo-box">
+	<view class="title">使用数组批量生产选项</view>
+	<radio-group bindchange='radioChange'>
+		<view wx:for='{{radioItems}}' wx:key='*this'>
+			<radio value="{{item.value}}" checked="{{item.checked}}">{{item.name}}</radio>
+		</view>
+	</radio-group>
+</view>

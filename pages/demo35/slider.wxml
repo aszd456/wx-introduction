@@ -1,0 +1,19 @@
+<view class="demo-box">
+	<view class="title">右侧显示当前取值</view>
+	<slider min="0" max="100" value="50" step="5" show-value />
+</view>
+<view class="demo-box">
+	<view class="title">自定义颜色</view>
+	<slider min="0" max="100" value="50" step="5" block-size="20" block-color="red" activeColor="blue" show-value />
+</view>
+
+<view class="demo-box">
+	<view class="title">禁用</view>
+	<slider min="0" max="100" value="50" step="5" disabled show-value />
+</view>
+
+<view class="demo-box">
+	<view class="title">监听事件</view>
+	<slider min="0" max="100" value="50" step="5" bindchange='sliderChange' show-value />
+</view>
+

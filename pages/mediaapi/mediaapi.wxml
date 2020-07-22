@@ -1,0 +1,44 @@
+<view class="title">图片管理</view>
+<view class="demo-box">
+	<view class="title">wx.getLocationi(obj)</view>
+	<button type="primary" bindtap='chooseImage'>选择图片</button>
+	<image src="{{src}}" mode="widthFix"></image>
+	<button type="primary" size="mini" bindtap='previewImage'>预览图片</button>
+	<button type="primary" size="mini" bindtap='getImageInfo'>图片信息</button>
+	<button type="primary" size="mini" bindtap='saveImage'>保存图片</button>
+</view>
+<view class="demo-box" style="border: 0.0625rem solid;">
+	<view class="title">录音管理器</view>
+	<button type="primary" size="mini" bindtap='start'>开始录音</button>
+	<button type="primary" size="mini" bindtap='stop'>停止录音</button>
+</view>
+<view class="demo-box">
+	<view class="title">背景音乐管理</view>
+	<button type="primary" size="mini" bindtap='play'>播放</button>
+	<button type="primary" size="mini" bindtap='pause'>暂停</button>
+</view>
+<view class="demo-box" style="border: 0.0625rem solid blue;">
+	<view class="title">音频组件控制</view>
+	<button type="primary" size="mini" bindtap='audioPlay'>播放</button>
+	<button type="primary" size="mini" bindtap='audioStop'>停止</button>
+	<button type="primary" size="mini" bindtap='audioPause'>暂停</button>
+</view>
+<view class="demo-box">
+	<view class="title">视频管理综合应用</view>
+	<button type="primary" size="mini" bindtap='chooseVideo'> 选择视频</button>
+	<video id="myVideo" src="{{videoSrc}}" enable-danmu="{{true}}" danmu-btn="{{true}}" controls="{{true}}"></video>
+	<view>
+		<button type="primary" size="mini" bindtap='videoPlay'>播放</button>
+		<button type="primary" size="mini" bindtap='videoPause'>暂停</button>
+		<button type="primary" size="mini" bindtap='videoSave'>保存视频</button>
+	</view>
+	<input placeholder="输入弹幕" bindblur='bindInputBlur' />
+	<button type="primary" bindtap='bindSendDanmu'>发送弹幕</button>
+</view>
+<view class="demo-box" style="border: 0.0625rem solid red;">
+	<view class="title">录像功能应用</view>
+	<camera device-position="back" flash="off" style="width: 100%; height: 18.75rem;"></camera>
+	<button wx:if='{{isRecording}}' type="primary" bindtap='stopRecord'>结束录像</button>
+	<button wx:else type="primary" bindtap='startRecord'>开始录像</button>
+	<video hidden='{{isHidden}}' src='{{cameraSrc}}' controls="{{true}}"></video>
+</view>

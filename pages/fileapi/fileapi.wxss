@@ -1,0 +1,4 @@
+/* pages/fileapi/fileapi.wxss */
+button {
+	margin: 15rpx;
+}

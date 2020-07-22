@@ -1,0 +1,8 @@
+/* pages/baseapi/baseapi.wxss */
+input,button{
+	margin: 15rpx;
+}
+.status{
+	margin: 15rpx;
+	text-align: left;
+}

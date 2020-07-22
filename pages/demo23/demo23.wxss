@@ -1,0 +1,15 @@
+/* pages/demo23/demo23.wxss */
+map{
+	width: 100%;
+	height: 600rpx;
+}
+cover-view {
+	width: 200rpx;
+	background-color: lightyan;
+	margin: 0 auto; 
+}
+cover-image {
+	width: 100rpx;
+	height: 100rpx;
+	margin: 0 auto;
+}

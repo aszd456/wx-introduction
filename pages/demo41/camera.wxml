@@ -1,0 +1,5 @@
+<view class="demo-box">
+	<camera device-position="back" flash="off" style="width: 100%;height: 18.75rem;"></camera>
+	<button type="primary" bindtap='takePhoto'>拍照</button>
+	<image mode="widthFix" wx:if='{{src}}' src="{{src}}"></image>
+</view>

@@ -1,0 +1,14 @@
+<view class="demo-box">
+	<view class="title">使用带文字的view作为翻页内容</view>
+	<swiper indicator-dots autoplay interval="5000" duration="500" circular>
+		<swiper-item>
+			<view class="swiper-item">第1页</view>
+		</swiper-item>
+		<swiper-item>
+			<view class="swiper-item">第2页</view>
+		</swiper-item>
+		<swiper-item>
+			<view class="swiper-item">第3页</view>
+		</swiper-item>
+	</swiper>
+</view>

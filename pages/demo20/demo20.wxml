@@ -1,0 +1,16 @@
+<view class="demo-box">
+	<view class="title">纵向滚动</view>
+	<scroll-view scroll-y="true">
+		<view class="scroll-item-y">第一页</view>
+		<view class="scroll-item-y">第二页</view>
+		<view class="scroll-item-y">第三页</view>
+	</scroll-view>
+</view>
+<view class="demo-box">
+	<view class="title">横向滚动</view>
+	<scroll-view scroll-x="true">
+		<view class="scroll-item-x">第一页</view>
+		<view class="scroll-item-x">第二页</view>
+		<view class="scroll-item-x">第三页</view>
+	</scroll-view>
+</view>

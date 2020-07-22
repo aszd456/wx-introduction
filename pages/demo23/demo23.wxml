@@ -1,0 +1,10 @@
+<view class="demo-box">覆盖在原生组件之上的文本视图
+	<view class="title">在地图上放置cover-view</view>
+	<map>
+		<cover-view>
+			<cover-view>cover-view</cover-view>
+			<cover-image src="/icon/my.png"></cover-image>
+			<button type="primary" size="mini">按钮</button>
+		</cover-view>
+	</map>
+</view>

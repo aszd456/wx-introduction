@@ -1,0 +1,8 @@
+/* pages/demo25/demo25.wxss */
+.text-box {
+	width: 100%;
+	height: 500rpx;
+}
+text {
+	line-height: 20rpx;
+}

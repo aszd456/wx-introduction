@@ -1,0 +1,55 @@
+<view class="demo-box">
+	<view class="title">wx.getLocation(obj)</view>
+	<map latitude="{{lat}}" longitude="{{lon}}"></map>
+	<button type="primary" bindtap='getLocation'>获取位置</button>
+	<view class="title">纬度：{{lat}}</view>
+	<view class="title">经度：{{lon}}</view>
+	<view class="title">速度：{{speed}}</view>
+	<view class="title">精确度：{{accuracy}}</view>
+</view>
+<view class="demo-box">
+	<view class="title">wx.chooseLocation(obj)</view>
+	<map latitude="{{lat}}" longitude="{{lon}}"></map>
+	<button type="primary" bindtap='chooseLocation'>选择位置</button>
+	<view class="title">纬度：{{lat}}</view>
+	<view class="title">经度：{{lon}}</view>
+	<view class="title">名称：{{name}}</view>
+	<view class="title">地址：{{address}}</view>
+</view>
+<view class="demo-box">
+	<view class="title">wx.openLocation()</view>
+	<button type="primary" bindtap='openLocation'>查看当前位置</button>
+</view>
+<view class="demo-box">
+	<view class="title">mapCtx.getCenterLocation(obj)</view>
+	<map id="myMap" ></map>
+	<button type="primary" bindtap='getCenterLocation'>获取位置</button>
+	<view class="title">纬度：{{lat}}</view>
+	<view class="title">经度：{{lon}}</view>
+</view>
+<view class="demo-box">
+	<view class="title">mapCtx.moveToLocation()</view>
+	<map id="myMap2" latitude="31.350790" longitude="118.412190" show-location="{{true}}"></map>
+	<button type="primary" bindtap='moveToLocation'>移动位置</button>
+</view>
+<view class="demo-box">
+	<view class="title">mapCtx.translateMarker(obj)</view>
+	<map id="myMap3" latitude="{{lat}}" longitude="{{lon}}" markers="{{markers}}"></map>
+	<button type="primary" bindtap='translateMarker'>平移标记</button>
+</view>
+<view class="demo-box">
+	<view class="title">mapCtx.includePoints(obj)</view>
+	<map id="myMap4"></map>
+	<button type="primary" bindtap='includePoints'>展示指定经纬度</button>
+</view>
+<view class="demo-box">
+	<view class="title">mapCtx.getRegion(obj)</view>
+	<map id="myMap5"></map>
+	<button type="primary" bindtap='getRegion'>获取视野范围</button>
+</view>
+<view class="demo-box">
+	<view class="title">mapCtx.getScale(obj)</view>
+	<map id="myMap6"></map>
+	<button type="primary" bindtap='getScale'>获取缩放级别</button>
+	<view class="title">缩放级别：{{scale}}</view>
+</view>

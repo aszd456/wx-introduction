@@ -1,0 +1,6 @@
+/* pages/cacheapi/cacheapi.wxss */
+input{
+	border: 1rpx solid lightblue;
+	height: 2rpx;
+	margin: 15rpx;
+}

@@ -1,0 +1,9 @@
+<view class="demo-box">
+	<view class="title">模拟用户登录效果</view>
+	<form bindsubmit="onSubmit" bindreset="onReset">
+		<input name='username' placeholder="请输入用户名" />
+		<input name='password' password placeholder="请输入密码" />
+		<button size="mini" form-type="submit">提交</button>
+		<button size="mini" form-type="reset">重置</button>
+	</form>
+</view>

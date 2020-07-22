@@ -1,0 +1,7 @@
+<!-- navigator.wxml -->
+<view style="text-align:center"> {{title}} </view>
+<view> 点击左上角返回回到之前页面 </view>
+<view class="demo-box">
+	<view class="title">wx.navigateBack</view>
+	<button type="primary" size="mini" bindtap='navigateBack'>返回首页</button>
+</view>

@@ -1,0 +1,18 @@
+<view class="demo-box">
+	<view class="title">内容的变化</view>
+	<block wx:for="{{iconType}}" wx:key="index">
+		<icon type="{{item}}" size="36"></icon>
+	</block>
+</view>
+<view class="demo-box">
+	<view class="title">颜色的变化</view>
+	<block wx:for="{{iconColor}}" wx:key="index">
+		<icon type="info" color="{{item}}" size="36"></icon>
+	</block>
+</view>
+<view class="demo-box">
+	<view class="title">大小的变化</view>
+	<block wx:for="{{iconSize}}" wx:key="index">
+		<icon type="info" size="{{item}}"></icon>
+	</block>
+</view>

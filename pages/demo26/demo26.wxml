@@ -1,0 +1,12 @@
+<view class="demo-box">
+	<view class="title">元素节点（使用style样式）</view>
+	<rich-text nodes="{{nodes01}}"></rich-text>
+</view>
+<view class="demo-box">
+	<view class="title">元素节点（使用class样式）</view>
+	<rich-text nodes="{{nodes02}}"></rich-text>
+</view>
+<view class="demo-box">
+	<view class="title">文本节点</view>
+	<rich-text nodes="{{nodes03}}"></rich-text>
+</view>

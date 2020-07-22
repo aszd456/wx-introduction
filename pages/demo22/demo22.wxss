@@ -1,0 +1,18 @@
+/* pages/demo22/demo22.wxss */
+movable-area {
+	width: 150rpx;
+	height: 150rpx;
+	background-color: lightblue;
+	margin: 0 auto;
+}
+movable-view {
+	background-color: red;
+}
+#mv01,#mv03 {
+	width: 50rpx;
+	height: 50rpx;
+}
+#mv02 {
+	width: 180rpx;
+	height: 180rpx;
+}
